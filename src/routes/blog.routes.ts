@@ -14,7 +14,7 @@ router.post('/',createBlog )
 router.put('/:id',updateBlog);
 //Delete
 router.delete('/:id',deleteOneblog);
-router.delete('/:id',deleteAllblog);
+router.delete('/',deleteAllblog);
 
 
 export default router;

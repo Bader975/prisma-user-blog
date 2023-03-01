@@ -95,11 +95,7 @@ export const deleteAllblog = async (req: Request, res: Response) => {
         const  {id } = req.params
      
         let delete_all = await prisma.blog.deleteMany({
-            where: {
-                id,
-            },
           
-     
         })
     res.json("The Blogs has been deleted "+delete_all);
 } catch (error) {
